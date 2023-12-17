@@ -99,6 +99,8 @@ p {
 .checked {
     background-color: var(--color-light_grey) !important;
     color: var(--color-white) !important;
+    text-shadow: 0 0 4px var(--color-white);
+    box-shadow: 0 0px 20px 1px lightblue;
 }
 
 
@@ -122,6 +124,8 @@ p {
     cursor: pointer;
     font-weight: var(--fw-bold);
     letter-spacing: 1.5px;
+    text-shadow: -2px -2px 18px var(--color-orange);
+    box-shadow: 0 0px 20px .05px lightblue;
 }
 
 .hidden {
@@ -156,29 +160,27 @@ p {
     animation-timing-function: linear;
 }
 
-
-
 @keyframes glow-effect {
     0% {
-        box-shadow: 0px 0px 1px .01px coral;
+        box-shadow: 0px 0px 1px .01px var(--color-orange);
         transform: scale(1);
         transition-duration: ease .2s;
     }
 
     50% {
-        box-shadow: 0px 0px 14px .01px coral;
+        box-shadow: 0px 0px 14px .01px var(--color-orange);
         transform: scale(1.02);
         transition-duration: ease .2s;
     }
 
     50% {
-        box-shadow: 0px 0px 26px .01px coral;
+        box-shadow: 0px 0px 26px .01px var(--color-orange);
         transform: scale(1.04);
         transition-duration: ease .2s;
     }
 
     100% {
-        box-shadow: 0px 0px 12px .01px coral;
+        box-shadow: 0px 0px 12px .01px var(--color-orange);
         transform: scale(1.01);
         transition-duration: ease .2s;
     }
