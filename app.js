@@ -22,6 +22,7 @@ rating_buttons.forEach((rating_buttons) => {
 });
 
 submit_button.addEventListener("click", () => {
+
     if (rate) {
         rate_value.innerText = rate;
         rating_card.classList.add("hidden");

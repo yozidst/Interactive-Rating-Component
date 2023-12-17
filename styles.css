@@ -149,16 +149,39 @@ p {
     margin-top: 25px ;
     color: var(--color-orange);
     background-color: #2C3138;
-
     border-radius: 50rem;
     padding: 5px 15px;
     width: fit-content;
+    animation: glow-effect .8s infinite ease-in-out;
+    animation-timing-function: linear;
 }
 
-.rating:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 25px .01px coral;
-    transition: 1s ease-in-out;
+
+
+@keyframes glow-effect {
+    0% {
+        box-shadow: 0px 0px 1px .01px coral;
+        transform: scale(1);
+        transition-duration: ease .2s;
+    }
+
+    50% {
+        box-shadow: 0px 0px 14px .01px coral;
+        transform: scale(1.02);
+        transition-duration: ease .2s;
+    }
+
+    50% {
+        box-shadow: 0px 0px 26px .01px coral;
+        transform: scale(1.04);
+        transition-duration: ease .2s;
+    }
+
+    100% {
+        box-shadow: 0px 0px 12px .01px coral;
+        transform: scale(1.01);
+        transition-duration: ease .2s;
+    }
 }
 
 .title {
